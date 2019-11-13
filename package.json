@@ -1,6 +1,6 @@
 {
   "name": "device-test",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "private": false,
   "license": "MIT",
   "description": "检测摄像头，麦克风，扬声器",
@@ -11,6 +11,10 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name device-test --dest lib packages/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xiaofuziod/device-test.git"
   },
   "dependencies": {
     "vue": "^2.6.10"
