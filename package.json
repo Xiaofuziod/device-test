@@ -1,16 +1,19 @@
 {
   "name": "device-test",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.2.5",
+  "private": false,
+  "license": "MIT",
+  "description": "检测摄像头，麦克风，扬声器",
+  "main": "lib/device-test.umd.min.js",
+  "author": "bzg",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name device-test --dest lib packages/index.js"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10",
-    "vuex": "^3.0.1"
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",

@@ -1,29 +1,33 @@
 # device-test
 
-## Project setup
+## 简介
+
+   基于vue的一个插件。
+
+### 安装
 ```
-yarn install
+   npm install device-test -S
 ```
 
-### Compiles and hot-reloads for development
+### 使用
 ```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
+  import Vue from 'vue'
+  import Test from 'device-test'
+  import 'device-test/lib/device-test.css'
+  Vue.use(Test)
+  
+  <template>
+    <device-test :visible.sync="visible" :config="config"/>
+  </template>
 ```
 
-### Lints and fixes files
+### 方法和属性
 ```
-yarn run lint
-```
+   visible: true || false。
+   config: {
+      type: ''http',
+      path: 'http:// ....'  
+   }
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+   更多功能开发中。。
+```
